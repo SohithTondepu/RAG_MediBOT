@@ -1,0 +1,336 @@
+[2026-03-14 23:48:01,726] 10 root INFO - Initialising RAG Pipeline
+[2026-03-14 23:48:01,727] 13 root INFO - Starting retrieval
+[2026-03-14 23:48:01,728] 219 sentence_transformers.SentenceTransformer INFO - Use pytorch device_name: cpu
+[2026-03-14 23:48:01,728] 227 sentence_transformers.SentenceTransformer INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-14 23:48:02,394] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:02,441] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:02,748] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:02,749] 857 huggingface_hub.utils._http WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-03-14 23:48:02,795] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:03,062] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:03,105] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:03,374] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:03,423] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-14 23:48:03,698] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:03,741] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:04,013] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:04,057] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:04,627] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-14 23:48:04,897] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:04,940] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:05,334] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:05,378] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:05,657] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:05,723] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:06,006] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-14 23:48:06,349] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-14 23:48:06,717] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:48:06,763] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-14 23:48:07,035] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-14 23:48:08,169] 27 root INFO - intialised retriever with top k as 9 similaryity search
+[2026-03-14 23:48:08,171] 10 root INFO - Loading LLM
+[2026-03-14 23:48:08,863] 15 root INFO - llm model loaded successfully
+[2026-03-14 23:48:15,080] 50 root INFO - Answering user question
+[2026-03-14 23:48:15,080] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:48:20,398] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:48:20,690] 90 root INFO - Answer generated successfully
+[2026-03-14 23:48:25,380] 50 root INFO - Answering user question
+[2026-03-14 23:48:25,381] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:48:26,262] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:48:26,266] 90 root INFO - Answer generated successfully
+[2026-03-14 23:49:45,024] 50 root INFO - Answering user question
+[2026-03-14 23:49:45,024] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:49:47,029] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:49:47,032] 90 root INFO - Answer generated successfully
+[2026-03-14 23:49:49,084] 50 root INFO - Answering user question
+[2026-03-14 23:49:49,084] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:49:49,802] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:49:49,804] 90 root INFO - Answer generated successfully
+[2026-03-14 23:49:51,873] 50 root INFO - Answering user question
+[2026-03-14 23:49:51,873] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:49:52,298] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:49:52,299] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+[2026-03-14 23:49:55,609] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:49:55,612] 90 root INFO - Answer generated successfully
+[2026-03-14 23:49:57,661] 50 root INFO - Answering user question
+[2026-03-14 23:49:57,661] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:49:58,173] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:49:58,174] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:50:16,596] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:50:16,597] 90 root INFO - Answer generated successfully
+[2026-03-14 23:50:18,647] 50 root INFO - Answering user question
+[2026-03-14 23:50:18,647] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:50:19,093] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:50:19,094] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:50:38,517] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:50:38,518] 90 root INFO - Answer generated successfully
+[2026-03-14 23:50:40,575] 50 root INFO - Answering user question
+[2026-03-14 23:50:40,575] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:50:41,011] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:50:41,011] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:51:01,587] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:51:01,588] 90 root INFO - Answer generated successfully
+[2026-03-14 23:51:03,610] 50 root INFO - Answering user question
+[2026-03-14 23:51:03,610] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:51:04,120] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:51:04,121] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 16.000000 seconds
+[2026-03-14 23:51:21,179] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:51:21,180] 90 root INFO - Answer generated successfully
+[2026-03-14 23:51:23,255] 50 root INFO - Answering user question
+[2026-03-14 23:51:23,255] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:51:23,756] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:51:23,756] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 17.000000 seconds
+[2026-03-14 23:51:41,138] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:51:41,140] 90 root INFO - Answer generated successfully
+[2026-03-14 23:51:43,177] 50 root INFO - Answering user question
+[2026-03-14 23:51:43,177] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:51:43,647] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:51:43,648] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:52:03,109] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:52:03,112] 90 root INFO - Answer generated successfully
+[2026-03-14 23:52:05,157] 50 root INFO - Answering user question
+[2026-03-14 23:52:05,157] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:52:05,631] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:52:05,632] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:52:24,068] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:52:24,071] 90 root INFO - Answer generated successfully
+[2026-03-14 23:52:26,139] 50 root INFO - Answering user question
+[2026-03-14 23:52:26,140] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:52:26,615] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:52:26,616] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:52:46,457] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:52:46,461] 90 root INFO - Answer generated successfully
+[2026-03-14 23:52:48,495] 50 root INFO - Answering user question
+[2026-03-14 23:52:48,495] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:52:49,875] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:52:49,876] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:53:08,370] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:53:08,372] 90 root INFO - Answer generated successfully
+[2026-03-14 23:53:10,442] 50 root INFO - Answering user question
+[2026-03-14 23:53:10,442] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:53:10,907] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:53:10,908] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:53:29,578] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:53:29,580] 90 root INFO - Answer generated successfully
+[2026-03-14 23:53:31,647] 50 root INFO - Answering user question
+[2026-03-14 23:53:31,647] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:53:32,117] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:53:32,118] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-14 23:53:52,749] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:53:52,751] 90 root INFO - Answer generated successfully
+[2026-03-14 23:53:54,814] 50 root INFO - Answering user question
+[2026-03-14 23:53:54,814] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:53:55,281] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:53:55,282] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-14 23:54:16,030] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:54:16,033] 90 root INFO - Answer generated successfully
+[2026-03-14 23:54:18,075] 50 root INFO - Answering user question
+[2026-03-14 23:54:18,075] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:54:18,538] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:54:18,539] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:54:37,910] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:54:37,912] 90 root INFO - Answer generated successfully
+[2026-03-14 23:54:39,967] 50 root INFO - Answering user question
+[2026-03-14 23:54:39,967] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:54:40,400] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:54:40,402] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 17.000000 seconds
+[2026-03-14 23:54:57,905] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:54:57,907] 90 root INFO - Answer generated successfully
+[2026-03-14 23:54:59,971] 50 root INFO - Answering user question
+[2026-03-14 23:54:59,972] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:55:01,052] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:55:01,054] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:55:19,637] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:55:19,638] 90 root INFO - Answer generated successfully
+[2026-03-14 23:55:21,675] 50 root INFO - Answering user question
+[2026-03-14 23:55:21,676] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:55:22,179] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:55:22,180] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:55:40,540] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:55:40,541] 90 root INFO - Answer generated successfully
+[2026-03-14 23:55:42,578] 50 root INFO - Answering user question
+[2026-03-14 23:55:42,579] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:55:43,020] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:55:43,021] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:56:02,736] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:56:02,738] 90 root INFO - Answer generated successfully
+[2026-03-14 23:56:04,798] 50 root INFO - Answering user question
+[2026-03-14 23:56:04,798] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:56:05,830] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:56:05,831] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:56:25,465] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:56:25,467] 90 root INFO - Answer generated successfully
+[2026-03-14 23:56:27,523] 50 root INFO - Answering user question
+[2026-03-14 23:56:27,523] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:56:27,987] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:56:27,988] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:56:47,408] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:56:47,409] 90 root INFO - Answer generated successfully
+[2026-03-14 23:56:49,453] 50 root INFO - Answering user question
+[2026-03-14 23:56:49,453] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:56:49,913] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:56:49,914] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:57:08,510] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:57:08,512] 90 root INFO - Answer generated successfully
+[2026-03-14 23:57:10,553] 50 root INFO - Answering user question
+[2026-03-14 23:57:10,554] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:57:11,128] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:57:11,129] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-14 23:57:31,594] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:57:31,596] 90 root INFO - Answer generated successfully
+[2026-03-14 23:57:33,642] 50 root INFO - Answering user question
+[2026-03-14 23:57:33,642] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:57:34,100] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:57:34,101] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-14 23:57:52,506] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:57:52,510] 90 root INFO - Answer generated successfully
+[2026-03-14 23:57:54,558] 50 root INFO - Answering user question
+[2026-03-14 23:57:54,558] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:57:54,990] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:57:54,990] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:58:14,773] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:58:14,774] 90 root INFO - Answer generated successfully
+[2026-03-14 23:58:16,806] 50 root INFO - Answering user question
+[2026-03-14 23:58:16,806] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:58:17,300] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:58:17,301] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-14 23:58:37,837] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:58:37,838] 90 root INFO - Answer generated successfully
+[2026-03-14 23:58:39,905] 50 root INFO - Answering user question
+[2026-03-14 23:58:39,905] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:58:40,325] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:58:40,326] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 21.000000 seconds
+[2026-03-14 23:59:01,883] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:59:01,886] 90 root INFO - Answer generated successfully
+[2026-03-14 23:59:03,927] 50 root INFO - Answering user question
+[2026-03-14 23:59:03,928] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:59:04,369] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:59:04,370] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:59:23,806] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:59:23,808] 90 root INFO - Answer generated successfully
+[2026-03-14 23:59:25,867] 50 root INFO - Answering user question
+[2026-03-14 23:59:25,867] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:59:26,319] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:59:26,320] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-14 23:59:45,743] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:59:45,744] 90 root INFO - Answer generated successfully
+[2026-03-14 23:59:47,791] 50 root INFO - Answering user question
+[2026-03-14 23:59:47,791] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:59:48,642] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-14 23:59:48,643] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 17.000000 seconds
+[2026-03-15 00:00:06,081] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:00:06,083] 90 root INFO - Answer generated successfully
+[2026-03-15 00:00:08,158] 50 root INFO - Answering user question
+[2026-03-15 00:00:08,159] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:00:08,599] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:00:08,599] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:00:28,083] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:00:28,084] 90 root INFO - Answer generated successfully
+[2026-03-15 00:00:30,158] 50 root INFO - Answering user question
+[2026-03-15 00:00:30,159] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:00:30,576] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:00:30,577] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:00:50,042] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:00:50,044] 90 root INFO - Answer generated successfully
+[2026-03-15 00:00:52,111] 50 root INFO - Answering user question
+[2026-03-15 00:00:52,111] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:00:52,554] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:00:52,555] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 21.000000 seconds
+[2026-03-15 00:01:14,008] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:01:14,011] 90 root INFO - Answer generated successfully
+[2026-03-15 00:01:16,059] 50 root INFO - Answering user question
+[2026-03-15 00:01:16,060] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:01:16,625] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:01:16,626] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:01:36,078] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:01:36,081] 90 root INFO - Answer generated successfully
+[2026-03-15 00:01:38,146] 50 root INFO - Answering user question
+[2026-03-15 00:01:38,146] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:01:38,609] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:01:38,609] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:01:58,188] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:01:58,189] 90 root INFO - Answer generated successfully
+[2026-03-15 00:02:00,240] 50 root INFO - Answering user question
+[2026-03-15 00:02:00,241] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:02:00,699] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:02:00,699] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:02:20,178] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:02:20,180] 90 root INFO - Answer generated successfully
+[2026-03-15 00:02:22,245] 50 root INFO - Answering user question
+[2026-03-15 00:02:22,246] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:02:22,736] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:02:22,737] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 17.000000 seconds
+[2026-03-15 00:02:40,142] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:02:40,144] 90 root INFO - Answer generated successfully
+[2026-03-15 00:02:42,205] 50 root INFO - Answering user question
+[2026-03-15 00:02:42,205] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:02:42,594] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:02:42,594] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:03:02,089] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:03:02,091] 90 root INFO - Answer generated successfully
+[2026-03-15 00:03:04,162] 50 root INFO - Answering user question
+[2026-03-15 00:03:04,162] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:03:04,620] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:03:04,621] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-15 00:03:25,139] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:03:25,142] 90 root INFO - Answer generated successfully
+[2026-03-15 00:03:27,198] 50 root INFO - Answering user question
+[2026-03-15 00:03:27,199] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:03:27,653] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:03:27,654] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-15 00:03:46,211] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:03:46,214] 90 root INFO - Answer generated successfully
+[2026-03-15 00:03:48,272] 50 root INFO - Answering user question
+[2026-03-15 00:03:48,272] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:03:48,689] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:03:48,691] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+[2026-03-15 00:04:09,100] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:04:09,102] 90 root INFO - Answer generated successfully
+[2026-03-15 00:04:11,169] 50 root INFO - Answering user question
+[2026-03-15 00:04:11,169] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:04:11,651] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:04:11,651] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:04:31,390] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:04:31,393] 90 root INFO - Answer generated successfully
+[2026-03-15 00:04:33,454] 50 root INFO - Answering user question
+[2026-03-15 00:04:33,454] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:04:33,929] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:04:33,932] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:04:54,412] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:04:54,414] 90 root INFO - Answer generated successfully
+[2026-03-15 00:04:56,459] 50 root INFO - Answering user question
+[2026-03-15 00:04:56,459] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:04:57,307] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:04:57,308] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 15.000000 seconds
+[2026-03-15 00:05:12,691] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:05:12,692] 90 root INFO - Answer generated successfully
+[2026-03-15 00:05:14,751] 50 root INFO - Answering user question
+[2026-03-15 00:05:14,751] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:05:15,232] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:05:15,233] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-15 00:05:33,774] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:05:33,775] 90 root INFO - Answer generated successfully
+[2026-03-15 00:05:35,820] 50 root INFO - Answering user question
+[2026-03-15 00:05:35,820] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:05:36,260] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:05:36,261] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:05:55,715] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:05:55,717] 90 root INFO - Answer generated successfully
+[2026-03-15 00:05:57,751] 50 root INFO - Answering user question
+[2026-03-15 00:05:57,751] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:05:58,213] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:05:58,213] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 18.000000 seconds
+[2026-03-15 00:06:16,792] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:06:16,795] 90 root INFO - Answer generated successfully
+[2026-03-15 00:06:18,860] 50 root INFO - Answering user question
+[2026-03-15 00:06:18,860] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:06:19,287] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:06:19,288] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:06:38,732] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:06:38,734] 90 root INFO - Answer generated successfully
+[2026-03-15 00:06:40,769] 50 root INFO - Answering user question
+[2026-03-15 00:06:40,769] 37 root INFO - Retrieving user query from pinecone
+[2026-03-15 00:06:41,239] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-03-15 00:06:41,240] 1068 groq._base_client INFO - Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+[2026-03-15 00:07:00,664] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-15 00:07:00,665] 90 root INFO - Answer generated successfully

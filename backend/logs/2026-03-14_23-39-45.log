@@ -1,0 +1,41 @@
+[2026-03-14 23:41:15,933] 10 root INFO - Initialising RAG Pipeline
+[2026-03-14 23:41:15,934] 13 root INFO - Starting retrieval
+[2026-03-14 23:41:15,935] 219 sentence_transformers.SentenceTransformer INFO - Use pytorch device_name: cpu
+[2026-03-14 23:41:15,935] 227 sentence_transformers.SentenceTransformer INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-14 23:41:16,654] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:16,702] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:16,996] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:17,071] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:17,364] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:17,433] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:17,700] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:17,744] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-14 23:41:18,101] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:18,145] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:18,433] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:18,475] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:18,842] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-14 23:41:19,127] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:19,170] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:19,773] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:19,815] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:20,093] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:20,137] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:20,452] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-14 23:41:20,726] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-14 23:41:21,126] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-14 23:41:21,169] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-14 23:41:21,752] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-14 23:41:23,946] 27 root INFO - intialised retriever with top k as 9 similaryity search
+[2026-03-14 23:41:23,947] 10 root INFO - Loading LLM
+[2026-03-14 23:41:24,806] 15 root INFO - llm model loaded successfully
+[2026-03-14 23:42:39,129] 50 root INFO - Answering user question
+[2026-03-14 23:42:39,130] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:42:41,601] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:42:41,948] 91 root INFO - Answer generated successfully
+[2026-03-14 23:43:41,350] 50 root INFO - Answering user question
+[2026-03-14 23:43:41,671] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:43:41,674] 41 root INFO - Original: 'What is presumed to be the primary reason for resistance to Botox injections?' \u2192 Rewritten: 'Given that we previously discussed the primary reason for resistance to Botox injections, what is the specific mechanism or factor that is presumed to be the primary reason for resistance to Botox injections, as previously mentioned?'
+[2026-03-14 23:43:41,674] 37 root INFO - Retrieving user query from pinecone
+[2026-03-14 23:43:43,610] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-14 23:43:43,612] 91 root INFO - Answer generated successfully

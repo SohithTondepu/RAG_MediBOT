@@ -1,0 +1,12 @@
+.venv
+venv
+.env
+backend/.env
+.env
+.env.*
+!.env.example
+./cxproject
+cxproject
+.env.local
+./graphRAG
+graphRAG

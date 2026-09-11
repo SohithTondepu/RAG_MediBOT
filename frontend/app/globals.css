@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Theme tokens */
+@theme {
+  --medical-primary: #0B4F6C;
+  --medical-secondary: #2C7DA0;
+  --medical-accent: #61A5C2;
+  --medical-bg: #F0F4F8;
+  --medical-text: #0B1A2B;
+}
+
+/* Base styles */
+body {
+  @apply bg-[var(--medical-bg)] text-[var(--medical-text)];
+}
+
+/* Custom scrollbar for medical theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D9E9F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C7DA0;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0B4F6C;
+}

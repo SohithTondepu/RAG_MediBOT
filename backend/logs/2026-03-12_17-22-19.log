@@ -1,0 +1,75 @@
+[2026-03-12 17:23:32,404] 10 root INFO - Initialising RAG Pipeline
+[2026-03-12 17:23:32,404] 13 root INFO - Starting retrieval
+[2026-03-12 17:23:32,407] 219 sentence_transformers.SentenceTransformer INFO - Use pytorch device_name: cpu
+[2026-03-12 17:23:32,407] 227 sentence_transformers.SentenceTransformer INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-12 17:23:33,084] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:33,086] 857 huggingface_hub.utils._http WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-03-12 17:23:33,125] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:33,695] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:33,728] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:33,991] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:34,077] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:34,333] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:34,397] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-12 17:23:34,967] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:34,999] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:35,702] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:35,734] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:35,997] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-12 17:23:36,253] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:36,285] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:36,804] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:36,836] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:37,122] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:37,154] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:37,420] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-12 17:23:37,818] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-12 17:23:38,262] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:23:38,295] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-12 17:23:38,565] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-12 17:23:40,097] 27 root INFO - intialised retriever with top k as 9 similaryity search
+[2026-03-12 17:23:40,101] 10 root INFO - Loading LLM
+[2026-03-12 17:23:40,870] 15 root INFO - llm model loaded successfully
+[2026-03-12 17:24:12,639] 59 root INFO - File saved: upload\Medical_book.pdf
+[2026-03-12 17:24:12,639] 29 root INFO - DocumentLoader initialized for directory: D:\ArtificialIntelligence\generative_ai\medical_assistant\backend\upload\Medical_book.pdf
+[2026-03-12 17:24:43,658] 55 root INFO - Loaded 637 pages from D:\ArtificialIntelligence\generative_ai\medical_assistant\backend\upload\Medical_book.pdf
+[2026-03-12 17:24:43,658] 11 root INFO - chunker initialised
+[2026-03-12 17:24:43,659] 26 root INFO - chunking documents
+[2026-03-12 17:24:43,861] 219 sentence_transformers.SentenceTransformer INFO - Use pytorch device_name: cpu
+[2026-03-12 17:24:43,861] 227 sentence_transformers.SentenceTransformer INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-03-12 17:24:44,290] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:44,375] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:44,639] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:44,731] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:45,080] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:45,121] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:45,389] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:45,429] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-03-12 17:24:45,694] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:45,989] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:46,583] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:46,623] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:47,149] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-03-12 17:24:47,409] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:47,449] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:47,804] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:47,843] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:48,124] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:48,162] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:48,423] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-03-12 17:24:48,685] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-03-12 17:24:49,044] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-03-12 17:24:49,083] 1025 httpx INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-03-12 17:24:49,350] 1025 httpx INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-03-12 17:24:50,984] 50 root INFO - Connected to Pinecone index: medicalassistant
+[2026-03-12 17:27:50,711] 61 root INFO - Stored 3428 chunks in Pinecone
+[2026-03-12 17:28:20,808] 50 root INFO - Answering user question
+[2026-03-12 17:28:20,808] 37 root INFO - Retrieving user query from pinecone
+[2026-03-12 17:28:25,316] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-12 17:28:25,368] 89 root INFO - Answer generated successfully
+[2026-03-12 17:29:25,071] 50 root INFO - Answering user question
+[2026-03-12 17:29:25,499] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-12 17:29:25,502] 41 root INFO - Original: 'its causes and symptoms' \u2192 Rewritten: 'Given that albinism is an inherited condition present at birth, characterized by a lack of pigment that normally gives color to the skin, hair, and eyes, what are the causes and symptoms associated with this condition?'
+[2026-03-12 17:29:25,503] 37 root INFO - Retrieving user query from pinecone
+[2026-03-12 17:29:28,237] 1025 httpx INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-12 17:29:28,240] 89 root INFO - Answer generated successfully
