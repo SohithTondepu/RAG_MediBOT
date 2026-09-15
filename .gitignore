@@ -1,12 +1,33 @@
-.venv
-venv
+# Environment files (SENSITIVE CREDENTIALS)
 .env
-backend/.env
-.env
-.env.*
+*.env
 !.env.example
-./cxproject
-cxproject
-.env.local
-./graphRAG
-graphRAG
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Application logs & temporary files
+backend/logs/
+*.log
+upload/
+backend/upload/
+static/
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
