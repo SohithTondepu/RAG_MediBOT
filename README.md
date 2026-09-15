@@ -1,6 +1,6 @@
 # 🩺 MediBot — Multi-Document Medical RAG Engine
 
-An enterprise-grade, scalable **Retrieval-Augmented Generation (RAG)** application designed for querying medical guidelines, clinical documents, tabular patient reports, and reference PDFs.
+A scalable **Retrieval-Augmented Generation (RAG)** application designed for querying medical guidelines, clinical documents, tabular patient reports, and reference PDFs.
 
 Built with **FastAPI**, **Streamlit**, **Pinecone Vector Database**, **Groq (`openai/gpt-oss-20b`)**, **BM25 Sparse Keyword Search**, **Local Cross-Encoder Reranking**, **LRU Semantic Query Caching**, and multi-layer **Security Guardrails**.
 
